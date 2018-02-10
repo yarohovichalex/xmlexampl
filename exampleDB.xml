@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exampleDB 
+	start-date="2010-08-29"
+	xmlns="http://www.htp.by/exampleDB_schema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+	xsi:schemaLocation="http://www.htp.by/exampleDB_schema exampleDB_schema.xsd">
+	<books>
+		<book>
+			<id>1</id>
+			<name>Annakorenina</name>
+			<publish_year>2014</publish_year>
+			<author>Tolstoy</author>
+		</book>
+		<book>
+			<id>2</id>
+			<name>Voina i mir</name>
+			<publish_year>2017</publish_year>
+			<author>Tolstoy</author>
+		</book>
+		<book>
+			<id>3</id>
+			<name>Vishnevuy sad</name>
+			<publish_year>2011</publish_year>
+			<author>Chehov</author>
+		</book>
+		<book>
+			<id>4</id>
+			<name>A zory zdes tihie</name>
+			<publish_year>1967</publish_year>
+			<author>Vasilev</author>
+		</book>
+		<book>
+			<id>5</id>
+			<name>Test name</name>
+			<publish_year>1969</publish_year>
+			<author>Testauthor</author>
+		</book>
+	</books>
+	
+	<employees>
+		<employee>
+			<id>1</id>
+			<name>Aleks</name>
+			<date_of_birth>1995-08-29</date_of_birth>
+			<email>test@mail.com</email>
+			<idbooks>1,2,4</idbooks>
+			<gender>male</gender>
+		</employee>
+		<employee>
+			<id>2</id>
+			<name>Oleg</name>
+			<date_of_birth>1991-03-24</date_of_birth>
+			<email>test@mail.com</email>
+			<idbooks>3</idbooks>
+			<gender>male</gender>
+		</employee>
+		<employee>
+			<id>3</id>
+			<name>Victor</name>
+			<date_of_birth>1993-10-04</date_of_birth>
+			<email>test@mail.com</email>
+			<idbooks>2</idbooks>
+			<gender>male</gender>
+		</employee>
+		<employee>
+			<id>4</id>
+			<name>Borya</name>
+			<date_of_birth>1992-04-16</date_of_birth>
+			<email>test@mail.com</email>
+			<idbooks>1,3</idbooks>
+			<gender>male</gender>
+		</employee>
+		<employee>
+			<id>5</id>
+			<name>Lena</name>
+			<date_of_birth>1989-06-27</date_of_birth>
+			<email>test@mail.com</email>			
+			<idbooks_read>0</idbooks_read>
+			<gender>female</gender>
+		</employee>
+	</employees>
+	
+	<reader_activity>	
+		<card>
+			<id>1</id>
+			<bookid>4</bookid>
+			<employeeid>1</employeeid>			
+		</card>		
+		<card>
+			<id>2</id>
+			<bookid>1</bookid>
+			<employeeid>1</employeeid>			
+		</card>
+		<card>
+			<id>3</id>
+			<bookid>2</bookid>
+			<employeeid>3</employeeid>			
+		</card>
+		<card>
+			<id>4</id>
+			<bookid>3</bookid>
+			<employeeid>2</employeeid>			
+		</card>
+		<card>
+			<id>5</id>
+			<bookid>3</bookid>
+			<employeeid>4</employeeid>			
+		</card>
+		<card>
+			<id>6</id>
+			<bookid>1</bookid>
+			<employeeid>4</employeeid>			
+		</card>
+		<card>
+			<id>7</id>
+			<bookid>2</bookid>
+			<employeeid>1</employeeid>			
+		</card>		
+	</reader_activity>
+</exampleDB>
